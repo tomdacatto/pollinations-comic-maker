@@ -62,6 +62,7 @@ Models are fixed in `config.js`. They were chosen from the live lists at [text m
 - **MCP server mode is not included.** A static Space serves files only and cannot run a server process.
 - Image models sometimes draw stray lettering. The prompt asks for no text, but the model may ignore that.
 - Narration uses the browser's voices, so it sounds different on each device.
+- Keep the Space public. Private Spaces were not tested, and their signed embed address may not work for the new-tab sign-in.
 
 ## Files
 

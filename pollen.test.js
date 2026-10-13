@@ -38,7 +38,8 @@ test("buildAuthorizeUrl uses the legacy flow and sends no client_id by default",
     assert.equal(url.searchParams.get("state"), "s1");
     assert.equal(url.searchParams.get("budget"), "1");
     assert.equal(url.searchParams.get("expiry"), "1");
-    assert.equal(url.searchParams.get("models"), "text,image,audio");
+    // No models parameter: category names are not canonical model IDs, and the key endpoint rejects them.
+    assert.equal(url.searchParams.has("models"), false);
     assert.equal(url.searchParams.has("client_id"), false);
     assert.equal(url.searchParams.has("response_type"), false, "the fragment flow has no response_type");
 });

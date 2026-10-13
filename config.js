@@ -9,8 +9,6 @@ export const APP_KEY = null; // { key: "pk_...", origin: "https://owner-name.sta
 // What a visitor's key may spend and for how long. Pollen is per visitor.
 export const BUDGET = 1;
 export const EXPIRY_DAYS = 1;
-// Model categories the visitor's key may use (shown on the consent screen).
-export const KEY_MODELS = "text,image,audio";
 
 // Models. Both are open to visitors with Quest Pollen (not paid_only).
 // Prices per the live list at https://gen.pollinations.ai/text/models and

@@ -3,7 +3,7 @@
 // the URL fragment, which the browser never sends to a server. It is kept in
 // sessionStorage for this tab only. Nothing here runs on a server.
 // Flow reference: https://github.com/pollinations/pollinations/blob/main/BRING_YOUR_OWN_POLLEN.md
-import { APP_KEY, BUDGET, EXPIRY_DAYS, IMAGE_MODEL, KEY_MODELS, TEXT_MODEL } from "./config.js";
+import { APP_KEY, BUDGET, EXPIRY_DAYS, IMAGE_MODEL, TEXT_MODEL } from "./config.js";
 
 const ENTER = "https://enter.pollinations.ai";
 const GEN = "https://gen.pollinations.ai";
@@ -37,7 +37,6 @@ export function buildAuthorizeUrl({ redirectUri, state, clientId = null }) {
     const params = new URLSearchParams({
         redirect_uri: redirectUri,
         state,
-        models: KEY_MODELS,
         budget: String(BUDGET),
         expiry: String(EXPIRY_DAYS),
     });
