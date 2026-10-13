@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#fbf5e6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1014" media="(prefers-color-scheme: dark)">
+    <title>Comic Page from One Prompt</title>
+    <meta name="description" content="Type one idea. Pollinations writes a four-panel comic script and draws every panel in one style. Sign in with your own Pollen.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💥</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">💥</span><span>Comic Page</span></a>
+        <div id="account" class="account"></div>
+    </header>
+
+    <main class="wrap">
+        <section class="hero">
+            <div class="hero-art" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <h1>One idea.<br>One comic page.</h1>
+            <p class="lede">Describe a story in a sentence. Pollinations writes a four-panel script with fixed characters, then draws every panel in the same style.</p>
+        </section>
+
+        <p id="framed-note" class="notice info" hidden></p>
+
+        <form id="make" class="make" autocomplete="off">
+            <label for="idea" class="label">Your idea</label>
+            <textarea id="idea" name="idea" rows="3" maxlength="200" placeholder="A cat becomes mayor of a town where it always rains" required></textarea>
+            <div id="chips" class="chips"></div>
+            <div class="controls">
+                <label class="style-pick">
+                    <span>Look</span>
+                    <select id="style"></select>
+                </label>
+                <button id="go" class="button primary" type="submit">Make my comic</button>
+            </div>
+            <p class="hint">Each comic costs about 0.01 Pollen, paid from your own balance after you sign in.</p>
+        </form>
+
+        <div id="notice" class="notice" role="alert" hidden></div>
+        <p id="status" class="status" role="status" aria-live="polite" hidden></p>
+
+        <section id="output" class="output" hidden>
+            <div class="toolbar">
+                <button id="narrate" class="button" type="button" disabled>Narrate</button>
+                <button id="download" class="button" type="button" disabled>Download PNG</button>
+                <button id="share" class="button" type="button" disabled>Copy share text</button>
+                <button id="again" class="button ghost" type="button">New idea</button>
+            </div>
+            <article id="page" class="page"></article>
+        </section>
+    </main>
+
+    <footer class="foot">
+        Powered by <a href="https://pollinations.ai">Pollinations</a>. Your comic is paid with your own Pollen. This page has no server and keeps no key.
+    </footer>
+    <noscript>This comic maker needs JavaScript.</noscript>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

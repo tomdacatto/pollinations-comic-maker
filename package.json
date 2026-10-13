@@ -1,0 +1,8 @@
+{
+  "name": "comic-page-space",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}
