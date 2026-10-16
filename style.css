@@ -114,6 +114,20 @@ a {
 }
 
 /* Layout */
+.example {
+    margin-bottom: 24px;
+}
+
+.example summary {
+    cursor: pointer;
+}
+
+.example img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .wrap {
     width: min(960px, 100%);
     margin: 0 auto;

@@ -15,12 +15,15 @@ tags:
 
 # Comic Page from One Prompt
 
+[![Made with pollinations.ai](https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/badge-made-with.svg)](https://pollinations.ai/?ref=badge)
+
 Type one idea. Pollinations writes a four-panel comic script with fixed characters, draws every panel in the same style, and lays the panels out as a comic page with speech bubbles and captions.
 
 Visitors sign in with their own Pollen ([Bring Your Own Pollen](https://github.com/pollinations/pollinations/blob/main/BRING_YOUR_OWN_POLLEN.md)), so the Space never pays for anyone's comics. There is no server and no key in this repository.
 
 ## What you get
 
+- **Preview before sign-in:** open a saved example without generating anything or spending Pollen. Inspired by [kreggscode's starter](https://github.com/pollinations/pollinations/issues/17532).
 - **Script:** a text model returns strict JSON: a title, characters with a fixed visual description, and per-panel scenes with captions and speech. A reply that does not parse gets one retry.
 - **Panels:** all panels are drawn at once with the same look text, character descriptions and seed, so the cast stays recognisable.
 - **Page:** a comic-page grid (two columns on wider screens, one column on phones), with speech bubbles and captions drawn as HTML.
